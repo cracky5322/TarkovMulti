@@ -58,7 +58,7 @@ namespace Mods
         public static void AddItemValue<T>(ref T __instance, string id, ItemTemplate template) where T: Item
         {
             // Remove item if it has no value
-            if (Math.Round(__instance.Value()) == 0) return;
+            // if (Math.Round(__instance.Value()) == 0) return;
 
             // Make a copy of the existing attributes list, this is needed for inherited types of Item that use a global attributes list (ammo)
             var atts = new List<GClass1758>();

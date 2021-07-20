@@ -11,9 +11,7 @@ public class TarkovMod : MelonMod
     {
         MelonLogger.Msg("Hello from modloader");
 
-        var loader = new BaseLoader();
-
-        loader.mainObject = new GameObject("kcy-loader");
+        var loader = new BaseLoader { mainObject = new GameObject("kcy-loader") };
         GameObject.DontDestroyOnLoad(loader.mainObject);
 
         loader.modOptions = JsonConvert.DeserializeObject<ModOptions[]>(File.ReadAllText(@"Mods\loader.json"));

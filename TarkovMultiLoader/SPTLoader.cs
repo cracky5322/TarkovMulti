@@ -10,9 +10,7 @@ public class SPTLoader
     private static void Main(string[] args)
     {
         Log.Info("Hello from modloader");
-        var loader = new BaseLoader();
-
-        loader.mainObject = new GameObject("kcy-loader");
+        var loader = new BaseLoader { mainObject = new GameObject("kcy-loader") };
         GameObject.DontDestroyOnLoad(loader.mainObject);
 
         loader.modOptions = Json.Deserialize<ModOptions[]>(File.ReadAllText(@"user\mods\kcy-modloader\loader.json"));

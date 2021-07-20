@@ -50,7 +50,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - Extract|AnyCPU'">
     <OutputPath>bin\Release - Extract\</OutputPath>
-    <DefineConstants>TRACE;FREECAM;EXTRACT;NIGHTVISION;ITEMVALUE</DefineConstants>
+    <DefineConstants>TRACE;EXTRACT</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -59,7 +59,28 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - ItemValue|AnyCPU'">
     <OutputPath>bin\Release - ItemValue\</OutputPath>
-    <DefineConstants>TRACE;FREECAM;EXTRACT;NIGHTVISION;ITEMVALUE</DefineConstants>
+    <DefineConstants>TRACE;ITEMVALUE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AKI - ItemValue|AnyCPU'">
+    <OutputPath>bin\AKI - ItemValue\</OutputPath>
+    <DefineConstants>TRACE;ITEMVALUE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MelonLoader - ItemValue|AnyCPU'">
+    <OutputPath>bin\MelonLoader - ItemValue\</OutputPath>
+    <DefineConstants>TRACE;ITEMVALUE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -116,9 +137,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "C:\Games\SP Tarkov not bleedin\user\mods\kcy-modloader"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\Games\SP Tarkov not bleedin\user\mods\kcy-modloader\"</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -35,7 +35,7 @@ namespace Mods
         }
         void Update()
         {
-            if (Utils.inGame && Input.GetKeyDown(options["key"]))
+            if (Utils.InGame && Input.GetKeyDown(options["key"]))
             {
                 if (!cam.enabled)
                 {

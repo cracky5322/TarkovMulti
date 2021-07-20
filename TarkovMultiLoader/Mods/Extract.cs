@@ -1,12 +1,7 @@
 ﻿#if EXTRACT
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using EFT;
-using Comfort.Common;
 
 namespace Mods
 {
@@ -22,13 +17,13 @@ namespace Mods
         }
         void Update()
         {
-            if (Utils.inGame && Input.GetKeyDown(options["key"]))
+            if (Utils.InGame && Input.GetKeyDown(options["key"]))
             {
-                Player localPlayer = Utils.localPlayer;
+                Player localPlayer = Utils.LocalPlayer;
                 if (localPlayer != null)
                 {
                     // Get an extract
-                    var ex = Utils.gameWorld.ExfiltrationController.ExfiltrationPoints[0];
+                    var ex = Utils.GameWorld.ExfiltrationController.ExfiltrationPoints[0];
                     // Set it to instant
                     ex.Settings.ExfiltrationTime = 0.0f;
                     // Extract

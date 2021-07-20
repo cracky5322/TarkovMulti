@@ -65,10 +65,12 @@ namespace Mods
             atts.AddRange(__instance.Attributes);
             __instance.Attributes = atts;
 
-            GClass1758 attr = new GClass1758(EItemAttributeId.MoneySum);
-            attr.Name = "RUB ₽";
-            attr.StringValue = new Func<string>(__instance.ValueStr);
-            attr.DisplayType = new Func<EItemAttributeDisplayType>(() => EItemAttributeDisplayType.Compact);
+            GClass1758 attr = new GClass1758(EItemAttributeId.MoneySum)
+            {
+                Name = "RUB ₽",
+                StringValue = new Func<string>(__instance.ValueStr),
+                DisplayType = new Func<EItemAttributeDisplayType>(() => EItemAttributeDisplayType.Compact)
+            };
             __instance.Attributes.Add(attr);
         }
     }

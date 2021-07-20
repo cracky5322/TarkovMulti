@@ -10,7 +10,7 @@ class ItemValuePatch
 {
     static void Postfix(ref Item __instance, string id, ItemTemplate template)
     {
-        Mods.Value.AddItemValue(ref __instance, id, template);
+        Mods.ItemValue.AddItemValue(ref __instance, id, template);
     }
 }
 
@@ -20,7 +20,7 @@ class AmmoValuePatch
 {
     static void Postfix(ref GClass1746 __instance, string id, AmmoTemplate template)
     {
-        Mods.Value.AddItemValue(ref __instance, id, template);
+        Mods.ItemValue.AddItemValue(ref __instance, id, template);
     }
 }
 
@@ -30,7 +30,7 @@ class GrenadeValuePatch
 {
     static void Postfix(ref GClass1748 __instance, string id, GClass1648 template)
     {
-        Mods.Value.AddItemValue(ref __instance, id, template);
+        Mods.ItemValue.AddItemValue(ref __instance, id, template);
     }
 }
 
@@ -40,13 +40,13 @@ class ContainerValuePatch
 {
     static void Postfix(ref GClass1748 __instance, string id, GClass1615 template)
     {
-        Mods.Value.AddItemValue(ref __instance, id, template);
+        Mods.ItemValue.AddItemValue(ref __instance, id, template);
     }
 }
 
 namespace Mods
 {
-    public class Value : BaseMod
+    public class ItemValue : BaseMod
     {
         override public void Init(Dictionary<string, string> options)
         {

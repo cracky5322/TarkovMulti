@@ -7,14 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarkovMultiLoader", "Tarkov
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug - All|Any CPU = Debug - All|Any CPU
+		Debug - Extract|Any CPU = Debug - Extract|Any CPU
+		Debug - ItemValue|Any CPU = Debug - ItemValue|Any CPU
+		Release - All|Any CPU = Release - All|Any CPU
+		Release - Extract|Any CPU = Release - Extract|Any CPU
+		Release - ItemValue|Any CPU = Release - ItemValue|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - All|Any CPU.ActiveCfg = Debug|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - All|Any CPU.Build.0 = Debug|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - Extract|Any CPU.ActiveCfg = Debug - Extract|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - Extract|Any CPU.Build.0 = Debug - Extract|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - ItemValue|Any CPU.ActiveCfg = Debug - ItemValue|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Debug - ItemValue|Any CPU.Build.0 = Debug - ItemValue|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - All|Any CPU.ActiveCfg = Release|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - All|Any CPU.Build.0 = Release|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - Extract|Any CPU.ActiveCfg = Release - Extract|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - Extract|Any CPU.Build.0 = Release - Extract|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - ItemValue|Any CPU.ActiveCfg = Release - ItemValue|Any CPU
+		{9613376E-A3E5-49FD-9ABE-246FD577EBC1}.Release - ItemValue|Any CPU.Build.0 = Release - ItemValue|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

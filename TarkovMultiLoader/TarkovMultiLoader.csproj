@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TarkovMultiLoader</RootNamespace>
-    <AssemblyName>module</AssemblyName>
+    <AssemblyName>KcY-TarkovMulti</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -139,6 +139,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "C:\Games\SP Tarkov not bleedin\user\mods\kcy-modloader\"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\Games\SP Tarkov not bleedin\user\mods\kcy-modloader\module.dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>
